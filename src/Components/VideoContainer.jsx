@@ -10,7 +10,7 @@ const VideoContainer = () => {
 
   const videos = useSelector((state)=>state.appSlice.videos);
   const dispatch = useDispatch();
-  const url = "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key=AIzaSyAwS6JcIrfC1oEezvCnbouBUFS5k4D2j-Y";
+  const url = "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key={APIKEY}";
 
   useEffect(() => {
     fetchData();
