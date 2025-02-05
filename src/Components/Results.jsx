@@ -13,7 +13,7 @@ const Results = () => {
   const navigate = useNavigate();
 
   async function fetchSearchData() {
-    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${inputValue}&type=video&key=AIzaSyAwS6JcIrfC1oEezvCnbouBUFS5k4D2j-Y`;
+    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${inputValue}&type=video&key={APIKEY}`;
 
     try {
       const res = await fetch(url);
