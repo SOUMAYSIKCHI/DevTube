@@ -60,7 +60,7 @@ const Watch = () => {
   }
 
   async function getData() {
-    const dataURL = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${id}&key=AIzaSyAwS6JcIrfC1oEezvCnbouBUFS5k4D2j-Y`;
+    const dataURL = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${id}&key={APIKEY}`;
     try {
       let res = await fetch(dataURL);
       let op = await res.json();
